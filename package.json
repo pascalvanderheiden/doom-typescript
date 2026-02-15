@@ -1,0 +1,22 @@
+{
+  "name": "java-doom-cli",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --sourcemap --loader:.vert=text --loader:.frag=text --outdir=public/dist",
+    "build:engine": "bash scripts/build-doom-wasm.sh",
+    "dev": "esbuild src/index.ts --bundle --sourcemap --loader:.vert=text --loader:.frag=text --outdir=public/dist --servedir=public --watch"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "esbuild": "^0.20.2",
+    "typescript": "^5.4.0"
+  },
+  "dependencies": {
+    "@tonejs/midi": "^2.0.28",
+    "apl-easy-gl": "^0.4.0",
+    "earcut": "^3.0.2",
+    "gl-matrix": "^3.4.3",
+    "tone": "^15.1.22"
+  }
+}
