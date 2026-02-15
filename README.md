@@ -6,7 +6,9 @@
 
 ## About
 
-This project takes the [original DOOM source code](https://github.com/id-Software/DOOM) released by id Software (included locally in [`doom-original/`](doom-original/)) and compiles it to WebAssembly (WASM) via Emscripten, with a TypeScript frontend that handles rendering (WebGL), input, and audio (Web Audio API + Tone.js for MIDI music).
+This project takes the [original DOOM source code](https://github.com/id-Software/DOOM) released by id Software and compiles it to WebAssembly (WASM) via Emscripten, with a TypeScript frontend that handles rendering (WebGL), input, and audio (Web Audio API + Tone.js for MIDI music).
+
+> **Note**: The original C source code is not included in this repository. See the [id-Software/DOOM](https://github.com/id-Software/DOOM) repository for the original code.
 
 The game runs entirely client-side in modern browsers using the **Shareware DOOM1.WAD** file.
 
@@ -132,7 +134,7 @@ These screenshots document the iterative process of debugging the WebGL renderer
 
 ## License
 
-The original DOOM source code is released under the [GNU General Public License v2](doom-original/LICENSE.TXT). This project's TypeScript code follows the same license. The DOOM1.WAD shareware data file is copyrighted by id Software and is not included in this repository.
+The original DOOM source code is released under the [GNU General Public License v2](https://github.com/id-Software/DOOM/blob/master/linuxdoom-1.10/DOOMLIC.TXT). This project's TypeScript code follows the same license. The DOOM1.WAD shareware data file is copyrighted by id Software and is not included in this repository.
 
 ## Acknowledgments
 
